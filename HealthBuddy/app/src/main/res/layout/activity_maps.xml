@@ -1,0 +1,66 @@
+<LinearLayout
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_width="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="194dp"
+        android:layout_height="56dp"
+        android:text=""
+        android:id="@+id/TFaddress" />
+    <Button
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/button12"
+        android:layout_gravity="right"
+        android:onClick="onSearch" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:text="Map Type"
+        android:id="@+id/button13"
+        android:layout_gravity="right"
+        android:onClick="changeType" />
+</LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="387dp"
+    android:layout_height="401dp" android:id="@+id/map"
+    tools:context="project.sreesh.healthbuddy.MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/button14"
+        android:onClick="onStart" />
+
+    <EditText
+        android:layout_width="99dp"
+        android:layout_height="59dp"
+        android:id="@+id/editText5"
+        android:layout_gravity="right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/button15"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onStop" />
+        <EditText
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:id="@+id/editText6"
+            android:layout_gravity="right"
+            android:text="Calories" />
+    </LinearLayout>
+
+
+</LinearLayout>
